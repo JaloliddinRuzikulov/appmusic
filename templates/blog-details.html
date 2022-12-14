@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="zxx">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="DJoz Template">
+    <meta name="keywords" content="DJoz, unica, creative, html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Safarov Music's</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="{%static 'css/bootstrap.min.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/barfiller.css' %}" type="text/css">
+    <link rel="stylesheet" href="{%static 'css/nowfont.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/rockville.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/magnific-popup.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/owl.carousel.min.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/slicknav.min.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" type="text/css">
+</head>
+
+<body>
+    <!-- Page Preloder -->
+    <div id="preloder">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Header Section Begin -->
+    <header class="header header--normal">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2 col-md-2">
+                    <div class="header__logo">
+                        <a href="{% url 'main:index' %}"><img src="/static/img/logo.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="col-lg-10 col-md-10">
+                    <div class="header__nav">
+                        <nav class="header__menu mobile-menu">
+                            <ul>
+                                <li><a href="{% url 'main:index' %}">Bosh sahifa</a></li>
+                                <li><a href="{% url 'main:about' %}">Biz haqimizda</a></li>
+                                <li><a href="{% url 'main:discography' %}">Diskografiya</a></li>
+                                <li><a href="{% url 'main:tours' %}">Turlar</a></li>
+                                <li><a href="{% url 'main:videos' %}">Videolar</a></li>
+                                <li class="active"><a href="#">Sahifalar</a>
+                                    <ul class="dropdown">
+                                        <li><a href="{% url 'main:about' %}">Biz haqimizda</a></li>
+                                        <li><a href="{% url 'main:blog' %}">Blog</a></li>
+                                        <li><a href="./blog-details.html">Blog Detallari</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="{% url 'main:contact' %}">Aloqa</a></li>
+                            </ul>
+                        </nav>
+                        <div class="header__right__social">
+                            <a href="#"><i class="fa fa-facebook"></i></a>
+                            <a href="#"><i class="fa fa-twitter"></i></a>
+                            <a href="#"><i class="fa fa-instagram"></i></a>
+                            <a href="#"><i class="fa fa-dribbble"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="mobile-menu-wrap"></div>
+        </div>
+    </header>
+    <!-- Header Section End -->
+
+    <!-- Breadcrumb Begin -->
+    <div class="breadcrumb-option">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="breadcrumb__links">
+                        <a href="#"><i class="fa fa-home"></i> Home</a>
+                        <a href="#">Blog</a>
+                        <span>Musiqa festivali tadbirlari tashkilotchilari uchun ko'rsatmalar: musiqa festivalining zararini kamaytirish - 2022 yil dekabr
+                            2022</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Breadcrumb End -->
+
+    <!-- Blog Details Section Begin -->
+    <section class="blog-details spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="blog__details__content">
+                        <div class="blog__details__item">
+                            <div class="blog__details__item__pic set-bg" data-setbg="/static/img/blog/details/details-pic.jpg">
+                                <a href="#"><i class="fa fa-share-alt"></i></a>
+                            </div>
+                            <div class="blog__details__item__text">
+                                <span>Musiqa Festivali</span>
+                                <h3>Musiqa festivali tadbirlari tashkilotchilari uchun ko'rsatmalar: musiqa festivalining zararini kamaytirish - 2022 yil dekabr</h3>
+                                <div class="blog__details__item__widget">
+                                    <div class="row">
+                                        <div class="col-lg-6">
+                                            <ul>
+                                                <li> <span>Erna O’Conner</span></li>
+                                                <li>Dec 17, 2019</li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <ul>
+                                                <li>230 ko'rildi</li>
+                                                <li>18 Izohlar</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="blog__details__desc">
+                            <p>Mening maqolalarimni o'qigan ko'pchilik men shunday taassurot qoldirgandek his qilaman
+                                oxir-oqibat kimdir ularning hayotiga va har bir jumboq qismiga kirishini taklif qiladi
+                                shunchaki joyiga tushadi. Orqangizdan kabutarlar uchadi, xor sizga ergashadi
+                                Har bir sanada siz ko'chada 10 million dollarlik sumka topasiz
+                                siz AQShning Pleasantville shahriga ko'chib o'tish uchun foydalanasiz.</p>
+                            <p>Sizga o'zaro hurmat, murosaga kelish, qurbonlik, tushunish, ishlashga tayyorlik kerak
+                                va qiyin paytlarda uning yonida turing. Siz ular bilan bo'lishga tayyor bo'lishingiz kerak
+                                Faqat yorqin kunlarda emas, balki qorong'u kunlarda ham Sevgi hamma narsa emasligini yodda tuting
+                                senga kerak.</p>
+                        </div>
+                        <div class="blog__details__quote">
+                            <p>Ularning hech biri sizga abadiy birga qolishlarini aytmaydi, chunki bu oson. Yo'q
+                                Ulardan biri sizga o'z jonlarini garovga qo'yganliklarini aytadi.</p>
+                            <h6>OSCAR HUDSPETH</h6>
+                            <i class="fa fa-quote-right"></i>
+                        </div>
+                        <div class="blog__details__desc">
+                            <p>Siz birovning butun o'ziga bag'ishlanasiz. Siz faqat ostida ularga majburiyat emas
+                                ular yosh va chiroyli bo'lib qolishlari shart - chunki ular bunday qilmaydi. Va ikkalasi ham bo'lmaydi
+                                siz. Siz shunchaki ularga yaxshi odam kelmaguncha, ular bilan shug'ullanmaysiz
+                                ular ham, sizning munosabatingiz ham mukammal emas.</p>
+                            <p>Bu siz birga bo'lishni xohlagan odam. Siz ularning mavjudligiga sodiq bo'lasiz. Uchun
+                                siz ikkalangiz ekanligingizni o'ylab ko'ring</p>
+                        </div>
+                        <div class="blog__details__tags">
+                            <a href="#">Musiqa</a>
+                            <a href="#">Festival</a>
+                            <a href="#">Xalqaro</a>
+                            <a href="#">Tadbirlar</a>
+                        </div>
+                        <div class="blog__details__option">
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6 col-sm-6">
+                                    <a href="#" class="blog__option__btn">
+                                        <h6 class="option__btn__name"><i class="fa fa-angle-left"></i> Oldingi postlar
+                                        </h6>
+                                        <div class="blog__option__btn__item">
+                                            <div class="blog__option__btn__pic">
+                                                <img src="/static/img/blog/details/blog-change.jpg" alt="">
+                                            </div>
+                                            <div class="blog__option__btn__text">
+                                                <h6>2022 Bendigo Blues and Roots musiqa festivali…</h6>
+                                                <span>Dec 17, 2022</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-6">
+                                    <a href="#" class="blog__option__btn blog__option__btn--next">
+                                        <h6 class="option__btn__name">Keyingi postlar <i class="fa fa-angle-right"></i></h6>
+                                        <div class="blog__option__btn__item">
+                                            <div class="blog__option__btn__pic">
+                                                <img src="/static/img/blog/details/blog-change.jpg" alt="">
+                                            </div>
+                                            <div class="blog__option__btn__text">
+                                                <h6>2022 Bendigo Blues and Roots Musiqa festivali</h6>
+                                                <span>Dec 17, 2022</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="blog__details__services">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="blog__details__services__title">
+                                        <h4>Sizga yoqishi mumkin</h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-4 col-md-6 col-sm-6">
+                                    <div class="blog__details__services__item">
+                                        <div class="blog__details__services__item__pic">
+                                            <img src="/static/img/blog/details/bs-1.jpg" alt="">
+                                        </div>
+                                        <div class="blog__details__services__item__text">
+                                            <h6><a href="#">EFG Londondagi eng yaxshi chiqishlar…</a></h6>
+                                            <span>Dec 06, 2022</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6 col-sm-6">
+                                    <div class="blog__details__services__item">
+                                        <div class="blog__details__services__item__pic">
+                                            <img src="/static/img/blog/details/bs-2.jpg" alt="">
+                                        </div>
+                                        <div class="blog__details__services__item__text">
+                                            <h6><a href="#">Indigo qizlari 2022 yilgi sarlavhali dekaturni kuchaytiradi…</a></h6>
+                                            <span>Dec 06, 2022</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6 col-sm-6">
+                                    <div class="blog__details__services__item">
+                                        <div class="blog__details__services__item__pic">
+                                            <img src="/static/img/blog/details/bs-3.jpg" alt="">
+                                        </div>
+                                        <div class="blog__details__services__item__text">
+                                            <h6><a href="#">Mana bu yilgi eng muhim voqealar...</a></h6>
+                                            <span>Dec 06, 2022</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="blog__details__form">
+                            <div class="blog__details__form__title">
+                                <h4>I</h4>
+                            </div>
+                            <form action="#">
+                                <div class="input__list">
+                                    <input type="text" placeholder="Name">
+                                    <input type="text" placeholder="Email">
+                                    <input type="text" placeholder="Website">
+                                </div>
+                                <textarea placeholder="Comment"></textarea>
+                                <button type="submit" class="site-btn">SEND MESSAGE</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="blog__sidebar">
+                        <div class="blog__sidebar__item">
+                            <div class="blog__sidebar__title">
+                                <h4>Yangiliklardan xabardor bo'lish</h4>
+                            </div>
+                            <p> </p>
+                            <form action="#">
+                                <input type="text" placeholder="Name">
+                                <input type="text" placeholder="Email">
+                                <button type="submit" class="site-btn">Obuna bo'lish</button>
+                            </form>
+                        </div>
+                        <div class="blog__sidebar__item">
+                            <div class="blog__sidebar__title">
+                                <h4>Ijtimoiy tarmoqlar</h4>
+                            </div>
+                            <div class="blog__sidebar__social">
+                                <a href="#"><i class="fa fa-facebook"></i></a>
+                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                <a href="#"><i class="fa fa-instagram"></i></a>
+                                <a href="#"><i class="fa fa-dribbble"></i></a>
+                            </div>
+                        </div>
+                        <div class="blog__sidebar__item">
+                            <div class="blog__sidebar__title">
+                                <h4>Postlar</h4>
+                            </div>
+                            <a href="#" class="recent__item">
+                                <div class="recent__item__pic">
+                                    <img src="/static/img/blog/br-1.jpg" alt="">
+                                </div>
+                                <div class="recent__item__text">
+                                    <h6>2022 Bendigo Blues and Roots Musiqa festivali…</h6>
+                                    <span>Dek 17, 2019</span>
+                                </div>
+                            </a>
+                            <a href="#" class="recent__item">
+                                <div class="recent__item__pic">
+                                    <img src="/static/img/blog/br-2.jpg" alt="">
+                                </div>
+                                <div class="recent__item__text">
+                                    <h6>2022 Bendigo Blues and Roots Musiqa festivali…</h6>
+                                    <span>Dek 17, 2022</span>
+                                </div>
+                            </a>
+                            <a href="#" class="recent__item">
+                                <div class="recent__item__pic">
+                                    <img src="/static/img/blog/br-3.jpg" alt="">
+                                </div>
+                                <div class="recent__item__text">
+                                    <h6>2022 Bendigo Blues and Roots Musiqa festivali…</h6>
+                                    <span>Dek 17, 2022</span>
+                                </div>
+                            </a>
+                            <a href="#" class="recent__item">
+                                <div class="recent__item__pic">
+                                    <img src="/static/img/blog/br-4.jpg" alt="">
+                                </div>
+                                <div class="recent__item__text">
+                                    <h6>2022 Bendigo Blues and Roots Musiqa festivali…</h6>
+                                    <span>Dek 17, 2022</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Blog Details Section End -->
+
+    <!-- Footer Section Begin -->
+    <footer class="footer footer--normal spad set-bg" data-setbg="/static/img/footer-bg.png">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer__address">
+                        <ul>
+                            <li>
+                                <i class="fa fa-phone"></i>
+                                <p>Telefon</p>
+                                <h6>+998-90-007-44-5*</h6>
+                            </li>
+                            <li>
+                                <i class="fa fa-envelope"></i>
+                                <p>Email</p>
+                                <h6>humoyun200108@gmail.com</h6>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 offset-lg-1 col-md-6">
+                    <div class="footer__social">
+                        <h2>Safarov Musics</h2>
+                        <div class="footer__social__links">
+                            <a href="#"><i class="fa fa-facebook"></i></a>
+                            <a href="#"><i class="fa fa-twitter"></i></a>
+                            <a href="#"><i class="fa fa-instagram"></i></a>
+                            <a href="#"><i class="fa fa-dribbble"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 offset-lg-1 col-md-6">
+                    <div class="footer__newslatter">
+                        <h4>Bizni kuzatib boring</h4>
+                        <form action="#">
+                            <input type="text" placeholder="Email">
+                            <button type="submit"><i class="fa fa-send-o"></i></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer Section End -->
+
+    <!-- Js Plugins -->
+    <script src="{% static 'js/jquery-3.3.1.min.js' %}"></script>
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'js/jquery.magnific-popup.min.js' %}"></script>
+    <script src="{% static 'js/jquery.nicescroll.min.js' %}"></script>
+    <script src="{% static 'js/jquery.barfiller.js' %}"></script>
+    <script src="{% static 'js/jquery.countdown.min.js' %}"></script>
+    <script src="{% static 'js/jquery.slicknav.js' %}"></script>
+    <script src="{% static 'js/owl.carousel.min.js' %}"></script>
+    <script src="{% static 'js/main.js' %}"></script>
+
+    <!-- Music Plugin -->
+    <script src="{% static 'js/jquery.jplayer.min.js' %}"></script>
+    <script src="{% static 'js/jplayerInit.js' %}"></script>
+</body>
+
+</html>

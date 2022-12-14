@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="zxx">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="DJoz Template">
+    <meta name="keywords" content="DJoz, unica, creative, html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>DJoz | Template</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="{%static 'css/bootstrap.min.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/barfiller.css' %}" type="text/css">
+    <link rel="stylesheet" href="{%static 'css/nowfont.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/rockville.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/magnific-popup.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/owl.carousel.min.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/slicknav.min.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" type="text/css">
+</head>
+
+<body>
+    <!-- Page Preloder -->
+    <div id="preloder">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Header Section Begin -->
+    <header class="header header--normal">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2 col-md-2">
+                    <div class="header__logo">
+                        <a href="{% url 'main:index' %}"><img src="/static/img/logo.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="col-lg-10 col-md-10">
+                    <div class="header__nav">
+                        <nav class="header__menu mobile-menu">
+                            <ul>
+                                <li><a href="{% url 'main:index' %}">Bosh sahifa</a></li>
+                                <li><a href="{% url 'main:about' %}">Bzi haqimizda</a></li>
+                                <li><a href="{% url 'main:discography' %}">Diskografiya</a></li>
+                                <li class="active"><a href="{% url 'main:tours' %}">Turlar</a></li>
+                                <li><a href="{% url 'main:videos' %}">Videolar</a></li>
+                                <li><a href="#">Sahifalar</a>
+                                    <ul class="dropdown">
+                                        <li><a href="{% url 'main:about' %}">Biz haqimizda</a></li>
+                                        <li><a href="{% url 'main:blog' %}">Blog</a></li>
+                                        <li><a href="./blog-details.html">Blog Detallari</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="{% url 'main:contact' %}">Aloqa</a></li>
+                            </ul>
+                        </nav>
+                        <div class="header__right__social">
+                            <a href="#"><i class="fa fa-facebook"></i></a>
+                            <a href="#"><i class="fa fa-twitter"></i></a>
+                            <a href="https://www.instagram.com/p/CMr4Jl0Bojx/?utm_source=ig_web_copy_link"><i class="fa fa-instagram"></i></a>
+                            <a href="#"><i class="fa fa-dribbble"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="mobile-menu-wrap"></div>
+        </div>
+    </header>
+    <!-- Header Section End -->
+
+    <!-- Countdown Section Begin -->
+    <section class="countdown countdown--page spad set-bg" data-setbg="/static/img/countdown-bg.jpg">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="countdown__text">
+                        <h1>Tomorrowland 2022</h1>
+                        <h4>Musiqa festivali</h4>
+                    </div>
+                    <div class="countdown__timer" id="countdown-time">
+                        <div class="countdown__item">
+                            <span>20</span>
+                            <p>kun</p>
+                        </div>
+                        <div class="countdown__item">
+                            <span>45</span>
+                            <p>soat</p>
+                        </div>
+                        <div class="countdown__item">
+                            <span>18</span>
+                            <p>daqiqa</p>
+                        </div>
+                        <div class="countdown__item">
+                            <span>09</span>
+                            <p>sekund</p>
+                        </div>
+                    </div>
+                    <div class="buy__tickets">
+                        <a href="#" class="primary-btn">Chipta olish</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Countdown Section End -->
+
+    <!-- Tours Section Begin -->
+    <section class="tours spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 order-lg-1">
+                    <div class="tours__item__text">
+                        <h2>Untold Festival 2022</h2>
+                        <div class="tours__text__widget">
+                            <ul>
+                                <li>
+                                    <i class="fa fa-clock-o"></i>
+                                    <span>8:00pm</span>
+                                    <span>Dek 15, 2022</span>
+                                </li>
+                                <li>
+                                    <i class="fa fa-map-marker"></i>
+                                    Funkhaus Berlin, Berlin, Germany
+                                </li>
+                            </ul>
+                            <div class="price">$ 35.00</div>
+                        </div>
+                        <div class="tours__text__desc">
+                            <p>Yangi yil arafasida Evropaning elektron musiqa poytaxtida bo'lib o'tgan muhim Funkhaus Berlin
+                                munosib texno rassomlar ta'sirchan ro'yxatini mezbonlik qiladi.</p>
+                            <p>Eng kutilgan kechalardan biri bo'lgan 2019-yildan 2020-yilgacha bo'lgan sakrashni saundtrek qilish
+                                Yilning eng mashhur joylaridan birida, HYTE Berlin NYE</p>
+                        </div>
+                        <a href="#" class="primary-btn border-btn">Chipta olish</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 order-lg-2">
+                    <div class="tours__item__pic">
+                        <img src="/static/img/tours/tour-1.jpg" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-6 order-lg-4">
+                    <div class="tours__item__text tours__item__text--right">
+                        <h2>Untold Festival 2022</h2>
+                        <div class="tours__text__widget">
+                            <ul>
+                                <li>
+                                    <i class="fa fa-clock-o"></i>
+                                    <span>8:00pm</span>
+                                    <span>Dek 15, 2022</span>
+                                </li>
+                                <li>
+                                    <i class="fa fa-map-marker"></i>
+                                    Funkhaus Berlin, Berlin, Germany
+                                </li>
+                            </ul>
+                            <div class="price">$ 35.00</div>
+                        </div>
+                        <div class="tours__text__desc">
+                            <p>Yangi yil arafasida Evropaning elektron musiqa poytaxtida bo'lib o'tgan muhim Funkhaus Berlin
+                                munosib texno rassomlar ta'sirchan ro'yxatini mezbonlik qiladi.</p>
+                            <p>Eng kutilgan kechalardan biri bo'lgan 2019-yildan 2020-yilgacha bo'lgan sakrashni saundtrek qilish
+                                Yilning eng mashhur joylaridan birida, HYTE Berlin NYE</p>
+                        </div>
+                        <a href="#" class="primary-btn border-btn">Chipta olish</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 order-lg-3">
+                    <div class="tours__item__pic tours__item__pic--left">
+                        <img src="/static/img/tours/tour-2.jpg" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-6 order-lg-5">
+                    <div class="tours__item__text">
+                        <h2>Untold Festival 2022</h2>
+                        <div class="tours__text__widget">
+                            <ul>
+                                <li>
+                                    <i class="fa fa-clock-o"></i>
+                                    <span>8:00pm</span>
+                                    <span>Dek 15, 2022</span>
+                                </li>
+                                <li>
+                                    <i class="fa fa-map-marker"></i>
+                                    Funkhaus Berlin, Berlin, Germany
+                                </li>
+                            </ul>
+                            <div class="price">$ 35.00</div>
+                        </div>
+                        <div class="tours__text__desc">
+                            <p>Yangi yil arafasida Evropaning elektron musiqa poytaxtida bo'lib o'tgan muhim Funkhaus Berlin
+                                munosib texno rassomlar ta'sirchan ro'yxatini mezbonlik qiladi.</p>
+                            <p>Eng kutilgan kechalardan biri bo'lgan 2019-yildan 2020-yilgacha bo'lgan sakrashni saundtrek qilish
+                                Yilning eng mashhur joylaridan birida, HYTE Berlin NYE</p>
+                        </div>
+                        <a href="#" class="primary-btn border-btn">Chipta olish</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 order-lg-6">
+                    <div class="tours__item__pic tours__item__pic--last">
+                        <img src="/static/img/tours/tour-3.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Tours Section End -->
+
+    <!-- Footer Section Begin -->
+    <footer class="footer footer--normal spad set-bg" data-setbg="/static/img/footer-bg.png">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer__address">
+                        <ul>
+                            <li>
+                                <i class="fa fa-phone"></i>
+                                <p>Telefon</p>
+                                <h6>+998-90-007-44-5*</h6>
+                            </li>
+                            <li>
+                                <i class="fa fa-envelope"></i>
+                                <p>Email</p>
+                                <h6>humoyun2001080@gmail.com</h6>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 offset-lg-1 col-md-6">
+                    <div class="footer__social">
+                        <h2>Safarov Musics</h2>
+                        <div class="footer__social__links">
+                            <a href="#"><i class="fa fa-facebook"></i></a>
+                            <a href="#"><i class="fa fa-twitter"></i></a>
+                            <a href="#"><i class="fa fa-instagram"></i></a>
+                            <a href="#"><i class="fa fa-dribbble"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 offset-lg-1 col-md-6">
+                    <div class="footer__newslatter">
+                        <h4>Bizni kuzatib boring</h4>
+                        <form action="#">
+                            <input type="text" placeholder="Email">
+                            <button type="submit"><i class="fa fa-send-o"></i></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer Section End -->
+
+    <!-- Js Plugins -->
+    <script src="{% static 'js/jquery-3.3.1.min.js' %}"></script>
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'js/jquery.magnific-popup.min.js' %}"></script>
+    <script src="{% static 'js/jquery.nicescroll.min.js' %}"></script>
+    <script src="{% static 'js/jquery.barfiller.js' %}"></script>
+    <script src="{% static 'js/jquery.countdown.min.js' %}"></script>
+    <script src="{% static 'js/jquery.slicknav.js' %}"></script>
+    <script src="{% static 'js/owl.carousel.min.js' %}"></script>
+    <script src="{% static 'js/main.js' %}"></script>
+
+    <!-- Music Plugin -->
+    <script src="{% static 'js/jquery.jplayer.min.js' %}"></script>
+    <script src="{% static 'js/jplayerInit.js' %}"></script>
+</body>
+
+</html>
